@@ -1,0 +1,6 @@
+(library
+ (name CoqDojo_plugin)
+ (public_name coq-lsp.plugin.coq-dojo)
+ (preprocess
+  (pps ppx_deriving_yojson))
+ (libraries coq-lsp.fleche coq-lsp.lsp))
