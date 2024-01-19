@@ -148,7 +148,7 @@ let dump_ast ~io ~(doc : Doc.t) =
   (* let out_file_s = Lang.LUri.File.to_string_file uri ^ ".sexp.goaldump" in *)
   (* let () = dump_goals ~out_file:out_file_s ~doc pp_sexp in *)
   let message =
-    Format.asprintf "[ast plugin] dumping ast for %s was completed!" uri_str
+    Format.asprintf "[coq-dojo plugin] Tracing %s completed!" uri_str
   in
   Io.Report.message ~io ~lvl ~message;
   ()
